@@ -22,7 +22,7 @@ jobs:
     - name: sudo make
       run: sudo make
     - name: configure
-      run: mkdir build && cd debug_release
+      run: mkdir debug_release && cd debug_release
     - name: make
       run: cd debug_release && make 
     - name: make
