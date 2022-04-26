@@ -21,7 +21,7 @@ jobs:
     - name:  sudo make
       run: sudo make 
     - name:  cd
-      run: cd /home/runner/work/printf 
+      run: cd /home/runner/work
     - name: make
       run: make
     - name: test
