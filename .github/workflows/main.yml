@@ -20,7 +20,7 @@ jobs:
       run: sudo cmake /usr/src/gtest/CMakeLists.txt 
     - name:  sudo make
       run: sudo make 
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - name: configure
       run: mkdir build && cd build && cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_FLAGS="-Werror" ..
     - name: make
