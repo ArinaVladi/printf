@@ -20,6 +20,8 @@ jobs:
       run: sudo cmake /usr/src/gtest/CMakeLists.txt 
     - name:  sudo make
       run: sudo make 
+    - name:  cd
+      run:  /home/runner/work/printf 
     - name: make
       run: make
     - name: test
