@@ -21,10 +21,6 @@ jobs:
       run: sudo cmake /usr/src/gtest/CMakeLists.txt 
     - name: sudo make
       run: sudo make
-    - name: configure
-      run: mkdir debug_release && cd debug_release
-    - name: make
-      run: cd debug_release && make 
     - name: make
       run:  make
     - name: test
