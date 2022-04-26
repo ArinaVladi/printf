@@ -10,8 +10,20 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Install gtest manually
-      run: sudo apt-get install libgtest-dev && cd /usr/src/gtest && sudo cmake CMakeLists.txt && sudo make && sudo cp *.a /usr/lib && sudo ln -s /usr/lib/libgtest.a /usr/local/lib/libtest.a && sudo ln -s /usr/lib/libgtest_main.a /usr/local/lib/libgtest_main.a
+    - name: Install gtest
+      run: sudo apt-get install libgtest-dev 
+    - name: cd /usr/src/gtest
+      run: cd /usr/src/gtest 
+    - name: sudo cmake CMakeLists.txt
+      run: sudo cmake CMakeLists.txt 
+    - name:  sudo make
+      run: sudo make 
+    - name: sudo cp *.a /usr/lib
+      run: sudo cp *.a /usr/lib 
+    - name: sudo ln -s /usr/lib/libgtest.a /usr/local/lib/libtest.a
+      run: sudo ln -s /usr/lib/libgtest.a /usr/local/lib/libtest.a 
+    - name: sudo ln -s /usr/lib/libgtest_main.a /usr/local/lib/libgtest_main.a
+      run: sudo ln -s /usr/lib/libgtest_main.a /usr/local/lib/libgtest_main.a
     - uses: actions/checkout@v1
     - name: make
       run: make
