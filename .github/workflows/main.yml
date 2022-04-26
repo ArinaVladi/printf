@@ -18,8 +18,10 @@ jobs:
       run: sudo cmake /usr/src/gtest/CMakeLists.txt 
     - name:  sudo make
       run: sudo make 
-    - name: sudo cp *.a /usr/lib
-      run: sudo cp *.a /usr/lib 
+    - name: sudo cp /usr/src/gtest/libgtest.a /usr/lib 
+      run: sudo cp /usr/src/gtest/libgtest.a /usr/lib 
+    - name: sudo cp /usr/src/gtest/libgtest_main.a /usr/lib 
+      run: sudo cp /usr/src/gtest/libgtest_main.a /usr/lib 
     - name: sudo ln -s /usr/lib/libgtest.a /usr/local/lib/libtest.a
       run: sudo ln -s /usr/lib/libgtest.a /usr/local/lib/libtest.a 
     - name: sudo ln -s /usr/lib/libgtest_main.a /usr/local/lib/libgtest_main.a
