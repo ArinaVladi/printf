@@ -23,7 +23,7 @@ else
     BUILD_PATH = build_release
 endif
 
-LXXFLAGS += -lgtest -lgtest_main -lpthread
+#LXXFLAGS += -lgtest -lgtest_main -lpthread
 
 # Search for source files
 SRC_FULL_PATH = $(shell where /r ./ *.cpp)
