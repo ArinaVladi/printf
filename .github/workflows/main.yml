@@ -26,5 +26,5 @@ jobs:
     - name: cd to my directory
       run: cd /home/runner/work/printf/printf
     - name: make
-      run: make 
+      run: make -l /home/runner/work/printf/printf
     
