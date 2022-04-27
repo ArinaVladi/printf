@@ -12,16 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: sudo apt install nasm
+    - name: install nasm
       run: sudo apt install nasm
-    - name: Install gtest
-      run: sudo apt-get install libgtest-dev
-    - name: cd /usr/src/gtest
-      run: cd /usr/src/gtest
+    - name: install gtest
+      run: sudo apt-get install libgtest-dev && cd /usr/src/gtest
     - name: cd to my directory
       run: cd /home/runner/work/printf/printf
-    - name: display current dir
-      run: pwd
     - name: create folders
       run: make init
     - name: make debug
@@ -36,14 +32,10 @@ jobs:
     - uses: actions/checkout@v2
     - name: sudo apt install nasm
       run: sudo apt install nasm
-    - name: Install gtest
-      run: sudo apt-get install libgtest-dev
-    - name: cd /usr/src/gtest
-      run: cd /usr/src/gtest
+    - name: install gtest
+      run: sudo apt-get install libgtest-dev && cd /usr/src/gtest
     - name: cd to my directory
       run: cd /home/runner/work/printf/printf
-    - name: display current dir
-      run: pwd
     - name: create folders
       run: make init
     - name: make release
