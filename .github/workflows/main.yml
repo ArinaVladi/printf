@@ -26,8 +26,6 @@ jobs:
     - name: create folders
       run: make init
     - name: make release
-      run: make --file=/home/runner/work/printf/printf/Makefile
-    - name: run
-      run: ./debug/my_printf
+      run: make release
     - name: run
       run: ./release/my_printf
