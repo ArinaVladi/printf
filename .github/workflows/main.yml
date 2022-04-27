@@ -25,6 +25,8 @@ jobs:
       run: cd /home/runner/work/printf/printf
     - name: display current dir
       run: pwd
+    - name: create folders
+      run: make init
     - name: make
       run: make --file=/home/runner/work/printf/printf/Makefile
     - name: do tests
