@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <gtest/gtest.h>
+#if not defined NDEBUG
+    #include <gtest/gtest.h>
+#endif
 #include <stdarg.h>
 #include "testing.h"
 
@@ -11,6 +13,7 @@ extern "C" int printf_to_file(FILE* file, const char* format, ...);
     printf_to_file(test_info.my_printf.file_ptr, format,__VA_ARGS__);      \  
     fprintf       (test_info.c_printf.file_ptr, format, __VA_ARGS__);
 
+#if not defined NDEBUG
 class PrintfTest : public ::testing::Test {
 
     protected:
@@ -195,7 +198,7 @@ TEST_F(PrintfTest, Ded_test) {
     EXPECT_EQ(test_info.my_printf.num_of_digits, test_info.c_printf.num_of_digits);
     EXPECT_EQ(test_info.my_printf.hash, test_info.c_printf.hash);
 }
-
+#endif
 int main(int argc, char *argv[]) {
 
     #if defined NDEBUG 
