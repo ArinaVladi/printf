@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+//#include <gtest/gtest.h>
 #include <stdarg.h>
 #include "testing.h"
 
@@ -184,6 +185,7 @@ TEST_F(PrintfTest, percent) {
 } 
 
 TEST_F(PrintfTest, Ded_test) {
+
 
     do_test("%d %s %x %d%%%c%d\n", 
     -1, "love", 3802, 100, '!', 15);
