@@ -19,8 +19,8 @@ jobs:
       run: cd /usr/src/gtest
 #    - name: sudo cmake /usr/src/gtest/CMakeLists.txt
 #      run: sudo cmake /usr/src/gtest/CMakeLists.txt
-    - name: sudo make
-      run: sudo make 
+#    - name: sudo make
+#      run: sudo make 
     - name: cd to my directory
       run: cd /home/runner/work/printf/printf
     - name: display current dir
