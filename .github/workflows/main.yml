@@ -13,10 +13,12 @@ jobs:
     - uses: actions/checkout@master
       with:
           fetch-depth: 1
-    - name: Install gtest
-      run: sudo apt-get install libgtest-dev
+    - name: sudo apt install nasm
+      run: sudo apt install nasm
     - name: sudo apt-get install cmake
       run: sudo apt-get install cmake
+    - name: Install gtest
+      run: sudo apt-get install libgtest-dev
     - name: cd /usr/src/gtest
       run: cd /usr/src/gtest
     - name: sudo cmake CMakeLists.txt
@@ -25,8 +27,6 @@ jobs:
       run: sudo make 
     - name: cd
       run: /home/runner/work/printf/printf
-    - name: sudo apt install nasm
-      run: sudo apt install nasm
     - name: make
       run:  make
     - name: test
