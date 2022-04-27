@@ -197,8 +197,8 @@ TEST_F(PrintfTest, Ded_test) {
 */
 int main(int argc, char *argv[]) {
 
-  // _my_printf("%d %s %x %d%%%c%b\n", -1, "love", 3802, 100, '!', 15);
-   	::testing::InitGoogleTest(&argc, argv);
-	return RUN_ALL_TESTS(); 
+   _my_printf("%d %s %x %d%%%c%b\n", -1, "love", 3802, 100, '!', 15);
+//   	::testing::InitGoogleTest(&argc, argv);
+//	return RUN_ALL_TESTS(); 
 
 }
