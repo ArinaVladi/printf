@@ -23,6 +23,8 @@ jobs:
       run: sudo cmake /usr/src/gtest/CMakeLists.txt
     - name: sudo make
       run: sudo make 
+    - name: cd to my directory
+      run: cd /home/runner/work/printf/printf
     - name: make
       run: make 
     
