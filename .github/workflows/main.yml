@@ -20,9 +20,7 @@ jobs:
     - name: cd /usr/src/gtest
       run: cd /usr/src/gtest
     - name: sudo cmake /usr/src/gtest/CMakeLists.txt
-      run: sudo cmake /usr/src/gtest/CMakeLists.txt
-    - name:  sudo make
-      run: sudo make 
+      run: sudo cmake /usr/src/gtest/CMakeLists.txt 
     - name: make
       run: make 
     
