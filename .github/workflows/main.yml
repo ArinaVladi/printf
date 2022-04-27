@@ -13,16 +13,6 @@ jobs:
     - uses: actions/checkout@master
       with:
           fetch-depth: 1
-    - name: Install gtest
-      run: sudo apt-get install libgtest-dev
-    - name: sudo apt-get install cmake
-      run: sudo apt-get install cmake
-    - name: cd /usr/src/gtest
-      run: cd /usr/src/gtest 
-    - name: sudo cmake /usr/src/gtest/CMakeLists.txt
-      run: sudo cmake /usr/src/gtest/CMakeLists.txt 
-    - name: sudo make
-      run: sudo make
     - name: make
       run:  make
     - name: test
