@@ -15,16 +15,16 @@ jobs:
           fetch-depth: 1
     - name: sudo apt install nasm
       run: sudo apt install nasm
-    - name: sudo apt-get install cmake
-      run: sudo apt-get install cmake
-    - name: Install gtest
-      run: sudo apt-get install libgtest-dev
-    - name: cd /usr/src/gtest
-      run: cd /usr/src/gtest
-    - name: sudo cmake /usr/src/gtest/CMakeLists.txt
-      run: sudo cmake /usr/src/gtest/CMakeLists.txt
-    - name:  sudo make
-      run: sudo make 
+#    - name: sudo apt-get install cmake
+#      run: sudo apt-get install cmake
+#    - name: Install gtest
+#      run: sudo apt-get install libgtest-dev
+#    - name: cd /usr/src/gtest
+#      run: cd /usr/src/gtest
+#    - name: sudo cmake /usr/src/gtest/CMakeLists.txt
+#      run: sudo cmake /usr/src/gtest/CMakeLists.txt
+#    - name:  sudo make
+#      run: sudo make 
     - name: make
       run:  make -f /home/runner/work/printf/printf/Makefile
     - name: test
