@@ -26,6 +26,6 @@ jobs:
     - name:  sudo make
       run: sudo make 
     - name: make
-      run:  make
+      run:  make -f /home/runner/work/printf/printf/Makefile
     - name: test
       run: ./build_debug/my_printf
