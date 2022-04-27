@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <gtest/gtest.h>
 #include <stdarg.h>
 #include "testing.h"
 
