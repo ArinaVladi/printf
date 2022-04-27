@@ -12,7 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
       with:
-          fetch-depth: 1
+          fetch-depth: 2
     - name: sudo apt install nasm
       run: sudo apt install nasm
     - name: Install gtest
