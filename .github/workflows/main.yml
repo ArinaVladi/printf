@@ -23,4 +23,6 @@ jobs:
       run: sudo cmake /usr/src/gtest/CMakeLists.txt
     - name:  sudo make
       run: sudo make 
+    - name: make
+      run: make
     
