@@ -28,4 +28,6 @@ jobs:
     - name: make release
       run: make --file=/home/runner/work/printf/printf/Makefile
     - name: run
+      run: ./debug/my_printf
+    - name: run
       run: ./release/my_printf
