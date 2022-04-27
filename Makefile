@@ -34,8 +34,6 @@ CFLAGS +=  -fsanitize=address
 LDFLAGS += -fsanitize=address 
 
 # Build project
-all: 
-	echo "abracadabra"
 my_printf: bin/run.o bin/printf.o bin/get_descriptor.o bin/hash.o bin/testing.o Makefile
 	$(CC) bin/run.o bin/printf.o bin/get_descriptor.o bin/hash.o bin/testing.o  -o build_debug/my_printf  $(LXXFLAGS)  
 
