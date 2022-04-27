@@ -60,7 +60,8 @@ release : my_printf
 
 .PHONY: init clean
 init:
-	md bin
+	mkdir debug/bin
+	mdkdir release/bin
 
 clean:
 	rm -rf debug/bin/*
