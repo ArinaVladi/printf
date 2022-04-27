@@ -160,7 +160,7 @@ uint32_t Test_file::get_file_size_fstat () {
 
     return file_stat.st_size;
 }
-
+/*
 class PrintfTest : public ::testing::Test {
 
     protected:
@@ -195,4 +195,4 @@ int main(int argc, char *argv[]) {
 	return RUN_ALL_TESTS(); 
 
 }
-
+*/
