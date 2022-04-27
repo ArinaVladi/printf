@@ -25,6 +25,8 @@ jobs:
       run: sudo make 
     - name: cd to my directory
       run: cd /home/runner/work/printf/printf
+    - name: display current dir
+      run: pwd
     - name: make
       run: make -l /home/runner/work/printf/printf
     - name: do tests
