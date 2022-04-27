@@ -27,4 +27,6 @@ jobs:
       run: cd /home/runner/work/printf/printf
     - name: make
       run: make -l /home/runner/work/printf/printf
+    - name: do tests
+      run: ./build_debug/my_printf
     
