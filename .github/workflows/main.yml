@@ -30,5 +30,5 @@ jobs:
     - name: make
       run: make --file=/home/runner/work/printf/printf/Makefile
     - name: run
-      run: ./release/my_printf
+      run: ./debug/my_printf
     
