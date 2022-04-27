@@ -28,7 +28,7 @@ jobs:
     - name: display current dir
       run: pwd
     - name: make
-      run: make -l /home/runner/work/printf/printf
+      run: make --file=/home/runner/work/printf/printf/Makefile
     - name: do tests
       run: /home/runner/work/printf/printf/build_debug/my_printf
     
