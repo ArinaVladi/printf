@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-//#include <gtest/gtest.h>
+#include <gtest/gtest.h>
 #include <stdarg.h>
 #include "testing.h"
 
 extern "C" int _my_printf(const char* format, ...);
 extern "C" int printf_to_file(FILE* file, const char* format, ...);
-/*
+
 #define do_test(format, ...)                                               \
     printf_to_file(test_info.my_printf.file_ptr, format,__VA_ARGS__);      \  
     fprintf       (test_info.c_printf.file_ptr, format, __VA_ARGS__);
@@ -195,7 +195,7 @@ TEST_F(PrintfTest, Ded_test) {
     EXPECT_EQ(test_info.my_printf.num_of_digits, test_info.c_printf.num_of_digits);
     EXPECT_EQ(test_info.my_printf.hash, test_info.c_printf.hash);
 }
-*/
+
 int main(int argc, char *argv[]) {
 
    _my_printf("%d %s %x %d%%%c%b\n", -1, "love", 3802, 100, '!', 15);
